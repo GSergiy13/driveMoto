@@ -1,0 +1,122 @@
+.header {
+    margin-bottom: 80px;
+
+    &__top {
+        &-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 122px;
+            font-family: 'SFProDisplay-Bold', sans-serif;
+            font-weight: 700;
+        }
+    }
+
+    &__box {
+        display: flex;
+    }
+
+    &__adress {
+        margin-right: 60px;
+        width: 265px;
+        padding-left: 30px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../../images/adress-icon.svg);
+            width: 30px;
+            height: 30px;
+            left: 0;
+            top: -10px;
+        }
+    }
+
+    //header-bottom 
+
+
+}
+
+.user-list {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+
+    &__item {
+        padding-right: 10px;
+    }
+}
+
+.menu {
+    &__item {
+        display: inline-block;
+    }
+
+    &__item+&__item {
+        padding-left: 50px;
+    }
+}
+
+.menu-categories {
+    display: flex;
+    background-color: #f0f0f4;
+    justify-content: space-around;
+    min-height: 53px;
+    align-items: center;
+
+    &-item {
+        position: relative;
+    }
+
+    &__link {
+        transition: all .3s;
+        font-weight: 400;
+        padding: 15px 0 14px;
+        position: relative;
+
+        &::before {
+            content: '';
+            transition: all .3s;
+            position: absolute;
+            width: 0;
+            height: 3px;
+            left: auto;
+            right: 0;
+            bottom: -4px;
+            background-color: #1c62cd;
+        }
+
+        &:hover::before {
+            width: 100%;
+            right: auto;
+            left: 0;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+}
+
+
+.basket {
+    position: relative;
+
+    &__num {
+        position: absolute;
+        font-family: 'SFProDisplay-Medium', sans-serif;
+        color: #fff;
+        background-color: #1c62cd;
+        border-radius: 50%;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 20px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        bottom: -14px;
+        right: -13px;
+    }
+}

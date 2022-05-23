@@ -1,0 +1,91 @@
+.catalog {
+    margin-bottom: 100px;
+
+    &__title {
+        font-family: 'SFProDisplay-Bold', sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 26px;
+    }
+
+    &__filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        &-items {
+            button {
+                font-size: 14px;
+                line-height: 17px;
+                opacity: 0.7;
+                background: #F0F0F4;
+                border-radius: 3px;
+                border: none;
+                padding: 5px 22px;
+                cursor: pointer;
+            }
+            button + button {
+                margin-left: 8px;
+            }
+        }
+
+        &-button {
+            opacity: 0.3;
+
+            &--active {
+                opacity: 1;
+            }
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+
+            button {
+                border:none;
+                cursor: pointer;
+                background-color: transparent;
+                margin: 0;
+                padding: 0;
+            }
+            button + button {
+                margin-left: 10px;
+            }
+        }
+        &-btngrid {
+            width: 26px;
+            height: 21px;
+        }
+
+        &-btnline {
+            width: 26px;
+            height: 21px;
+        }
+
+    }
+
+    &__inner {
+        display: flex;
+        
+        &-aside {
+            min-width: 290px;
+            margin-right: 10px;
+        }
+        &-list {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+    }
+}
+.catalog__inner-list .product-item__wrapper {
+    margin-bottom: 30px;
+}
+
+
+.select-item {
+    border: 1.5px solid #D7D9DF;
+    padding: 7px 10px 7px 20px;
+    margin-right: 34px;
+}
